@@ -1,8 +1,15 @@
+@charset "UTF-8";
+/*  Define defaults for each variable. */
+/* Mainly scss modules, only imported to `assets/css/main.scss` */
+/* ---------- scss placeholder --------- */
+/* ---------- scss mixin --------- */
 /** Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+body { --blockquote-border-color: #eee; --blockquote-text-color: #9a9a9a; --prompt-text-color: rgb(46 46 46 / 77%); --prompt-tip-bg: rgb(123 247 144 / 20%); --prompt-tip-icon-color: #03b303; --prompt-info-bg: #e1f5fe; --prompt-info-icon-color: #0070cb; --prompt-warning-bg: rgb(255 243 205); --prompt-warning-icon-color: #ef9c03; --prompt-danger-bg: rgb(248 215 218 / 56%); --prompt-danger-icon-color: #df3c30; --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59, 130, 246, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; font: 500 16.8px/1.5 "Source Serif Pro", "Songti SC", "SimSun", "Serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: black; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+
+body [class^=prompt-] { --link-underline-color: rgb(219 216 216); }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -16,7 +23,7 @@ img { max-width: 100%; vertical-align: middle; }
 /** Figures */
 figure > img { display: block; }
 
-figcaption { font-size: 14px; }
+figcaption { font-size: 14.7px; }
 
 /** Lists */
 ul, ol { margin-left: 30px; }
@@ -24,26 +31,46 @@ ul, ol { margin-left: 30px; }
 li > ul, li > ol { margin-bottom: 0; }
 
 /** Headings */
-h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Lato', 'SimHei', 'STHeiti', 'SimHei', 'Serif'; font-weight: 500; }
 
 /** Links */
-a { color: #2a7ae2; text-decoration: none; }
+a { color: #1d4ed8; text-decoration: none; }
 
-a:visited { color: #1756a9; }
+a:visited { color: #143695; }
 
-a:hover { color: #111; text-decoration: underline; }
+a:hover { color: black; text-decoration: underline; }
 
 .social-media-list a:hover { text-decoration: none; }
 
 .social-media-list a:hover .username { text-decoration: underline; }
 
 /** Blockquotes */
-blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
+blockquote { border-left: 5px solid var(--blockquote-border-color); padding-left: 1rem; color: var(--blockquote-text-color); }
 
-blockquote > :last-child { margin-bottom: 0; }
+blockquote[class^="prompt-"] { display: flex; border-left: 0; border-radius: 6px; padding: 0.75rem 1.2rem; color: var(--prompt-text-color); }
+
+blockquote[class^="prompt-"]::before { margin-right: 1rem; font-family: "Font Awesome 5 Free"; text-align: center; width: 1.25rem; }
+
+blockquote[class^="prompt-"] p:last-child { margin-bottom: 0rem; }
+
+blockquote.prompt-tip { background-color: var(--prompt-tip-bg); }
+
+blockquote.prompt-tip::before { content: ""; color: var(--prompt-tip-icon-color); font-weight: 400; }
+
+blockquote.prompt-info { background-color: var(--prompt-info-bg); }
+
+blockquote.prompt-info::before { content: ""; color: var(--prompt-info-icon-color); font-weight: 900; }
+
+blockquote.prompt-warning { background-color: var(--prompt-warning-bg); }
+
+blockquote.prompt-warning::before { content: ""; color: var(--prompt-warning-icon-color); font-weight: 900; }
+
+blockquote.prompt-danger { background-color: var(--prompt-danger-bg); }
+
+blockquote.prompt-danger::before { content: ""; color: var(--prompt-danger-icon-color); font-weight: 900; }
 
 /** Code formatting */
-pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
+pre, code { font-size: 15.75px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
 
 code { padding: 1px 5px; }
 
@@ -52,7 +79,7 @@ pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); }
 
 @media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
@@ -65,7 +92,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .social-media-list li + li { padding-top: 5px; }
 
 /** Tables */
-table { margin-bottom: 30px; width: 100%; text-align: left; color: #3f3f3f; border-collapse: collapse; border: 1px solid #e8e8e8; }
+table { margin-bottom: 30px; width: 100%; text-align: left; color: #2e2e2e; border-collapse: collapse; border: 1px solid #e8e8e8; }
 
 table tr:nth-child(even) { background-color: #f7f7f7; }
 
@@ -78,17 +105,17 @@ table td { border: 1px solid #e8e8e8; }
 /** Site header */
 .site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; position: relative; }
 
-.site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
+.site-title { font-family: 'Lato', 'SimHei', 'STHeiti', 'SimHei', 'Serif'; font-size: 27.3px; font-weight: 300; line-height: 56.7px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 
 .site-title, .site-title:visited { color: #424242; }
 
-.site-nav { float: right; line-height: 54px; }
+.site-nav { float: right; line-height: 56.7px; }
 
 .site-nav .nav-trigger { display: none; }
 
 .site-nav .menu-icon { display: none; }
 
-.site-nav .page-link { color: #111; line-height: 1.5; }
+.site-nav .page-link { color: black; line-height: 1.5; }
 
 .site-nav .page-link:not(:last-child) { margin-right: 20px; }
 
@@ -97,11 +124,11 @@ table td { border: 1px solid #e8e8e8; }
 /** Site footer */
 .site-footer { border-top: 1px solid #e8e8e8; padding: 30px 0; }
 
-.footer-heading { font-size: 18px; margin-bottom: 15px; }
+.footer-heading { font-size: 18.9px; margin-bottom: 15px; }
 
 .contact-list, .social-media-list { list-style: none; margin-left: 0; }
 
-.footer-col-wrapper { font-size: 15px; color: #828282; margin-left: -15px; }
+.footer-col-wrapper { font-size: 15.75px; color: #828282; margin-left: -15px; }
 
 .footer-col { float: left; margin-bottom: 15px; padding-left: 15px; }
 
@@ -118,38 +145,34 @@ table td { border: 1px solid #e8e8e8; }
 /** Page content */
 .page-content { padding: 30px 0; flex: 1; }
 
-.page-heading { font-size: 32px; }
+.page-heading { font-size: 33.6px; }
 
-.post-list-heading { font-size: 28px; }
+.post-list-heading { font-size: 29.4px; }
 
 .post-list { margin-left: 0; list-style: none; }
 
 .post-list > li { margin-bottom: 30px; }
 
-.post-meta { font-size: 14px; color: #828282; }
+.post-meta { font-size: 14.7px; color: #828282; }
 
-.post-link { display: block; font-size: 24px; }
+.post-link { display: block; font-size: 25.2px; }
 
 /** Posts */
 .post-header { margin-bottom: 30px; }
 
-.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; }
+.post-title { font-size: 36.96px; letter-spacing: -1px; line-height: 1; }
 
-@media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
+@media screen and (max-width: 800px) { .post-title { font-size: 28.56px; } }
 
 .post-content { margin-bottom: 30px; }
 
-.post-content h2 { font-size: 32px; }
+.post-content h1 { font-size: 25.2px; }
 
-@media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
+@media screen and (max-width: 800px) { .post-content h1 { font-size: 23.1px; } }
 
-.post-content h3 { font-size: 26px; }
+.post-content h2 { font-size: 21px; }
 
-@media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
-
-.post-content h4 { font-size: 20px; }
-
-@media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
+@media screen and (max-width: 800px) { .post-content h2 { font-size: 18.9px; } }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }

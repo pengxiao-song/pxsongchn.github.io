@@ -1,0 +1,11 @@
+cdns:
+  # Google Fonts
+  - url: https://fonts.googleapis.com
+  - url: https://fonts.gstatic.com
+    args: crossorigin
+  - url: https://fonts.googleapis.com
+  # jsDelivr CDN
+  - url: https://cdn.jsdelivr.net
+
+fontawesome:
+  css: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css

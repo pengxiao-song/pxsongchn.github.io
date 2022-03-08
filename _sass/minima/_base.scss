@@ -14,6 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+  @include lightscheme;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
@@ -94,9 +95,9 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-family: 'Lato', 'SimHei', 'STHeiti', 'SimHei', 'Serif';
+  font-weight: $base-font-weight; 
 }
-
 
 
 /**
@@ -129,16 +130,36 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
-  letter-spacing: -1px;
-  font-style: italic;
+  border-left: 5px solid var(--blockquote-border-color);
+  padding-left: 1rem;
+  color: var(--blockquote-text-color);
 
-  > :last-child {
-    margin-bottom: 0;
+  &[class^="prompt-"] {
+      display: flex;
+      border-left: 0;
+      border-radius: 6px;
+      padding: 0.75rem 1.2rem;
+      color: var(--prompt-text-color);
+
+      &::before {
+          margin-right: 1rem;
+          font-family: "Font Awesome 5 Free";
+          text-align: center;
+          width: 1.25rem;
+      }
+
+      p:last-child {
+          margin-bottom: 0rem;
+      }
   }
+
+  @include prompt("tip", "\f0eb", 400);
+
+  @include prompt("info", "\f06a");
+
+  @include prompt("warning", "\f06a");
+
+  @include prompt("danger", "\f071");
 }
 
 
@@ -181,6 +202,10 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+  
+    // --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow);
+
   @extend %clearfix;
 
   @include media-query($on-laptop) {

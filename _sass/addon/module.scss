@@ -1,0 +1,21 @@
+/*
+* Mainly scss modules, only imported to `assets/css/main.scss`
+*/
+
+/* ---------- scss placeholder --------- */
+
+
+/* ---------- scss mixin --------- */
+
+
+@mixin prompt($type, $fw-icon, $icon-weight: 900) {
+    &.prompt-#{$type} {
+        background-color: var(--prompt-#{$type}-bg);
+
+        &::before {
+            content: $fw-icon;
+            color: var(--prompt-#{$type}-icon-color);
+            font-weight: $icon-weight;
+        }
+    }
+}
