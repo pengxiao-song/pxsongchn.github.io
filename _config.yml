@@ -1,4 +1,5 @@
 title: Pengxiao's Wiki
+author: Song Pengxiao
 email: pxsongcs@163.com
 description: >- # this means to ignore newlines until "baseurl:"
   "doing", building this blog is not the first thing for me.
@@ -6,11 +7,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: placetaking
 github_username:  Pengxixao
-
-header_pages:
-  - index.md
-  - about.md
-  - articals.md
   
 
 # Build settings
@@ -20,9 +16,9 @@ plugins:
   - jekyll-seo-tag
   - jemoji
 
-html_author: Pengxiao Song
-html_description: The web is Pengxiao Song's Wiki
+google_analytics: UA-222809215-2
 
+favicon: assets/icons/favicon-16x16.png
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
