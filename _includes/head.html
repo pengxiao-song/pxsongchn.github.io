@@ -3,12 +3,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="author" content="{{site.html_author}}">
+  <meta name="description" content="{{site.html_description}}">
+
+  <!-- 页面标题 -->
+  <title>{{ site.title }}</title>
+
+  <!-- SEO plugin -->
   {%- seo -%}
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ site.data.assets['cdns'].fontawesome.css }}">
+  <!-- <link rel="stylesheet" href="{{ site.data.assets['cdns'].fontawesome.css }}"> -->
 
   {%- feed_meta -%}
 
