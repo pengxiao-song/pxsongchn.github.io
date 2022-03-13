@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-13T20:01:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Pengxiao’s Wiki</title><subtitle>&quot;doing&quot;, building this blog is not the first thing for me.</subtitle><author><name>Song Pengxiao</name></author><entry><title type="html">我是中文</title><link href="http://localhost:4000/blogging/demo/2019/08/08/text-and-Chinese.html" rel="alternate" type="text/html" title="我是中文" /><published>2019-08-08T11:33:00+08:00</published><updated>2019-08-08T11:33:00+08:00</updated><id>http://localhost:4000/blogging/demo/2019/08/08/text-and-Chinese</id><content type="html" xml:base="http://localhost:4000/blogging/demo/2019/08/08/text-and-Chinese.html"><![CDATA[<h1 id="标题1">标题1</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-14T00:06:09+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Pengxiao’s Wiki</title><subtitle>&quot;doing&quot;, building this blog is not the first thing for me.</subtitle><author><name>Song Pengxiao</name></author><entry><title type="html">Wsl2 Setting From Scratch</title><link href="http://localhost:4000/2022/03/08/WSL2-setting-from-scratch.html" rel="alternate" type="text/html" title="Wsl2 Setting From Scratch" /><published>2022-03-08T00:00:00+08:00</published><updated>2022-03-08T00:00:00+08:00</updated><id>http://localhost:4000/2022/03/08/WSL2-setting-from-scratch</id><content type="html" xml:base="http://localhost:4000/2022/03/08/WSL2-setting-from-scratch.html"><![CDATA[<h1 id="wsl2--从零开始配置">WSL2 / 从零开始配置</h1>
+
+<h1 id="网络配置">网络配置</h1>
+
+<h1 id="zsh">zsh</h1>
+
+<h2 id="shell-配置">Shell 配置</h2>
+
+<h2 id="typora-配置">typora 配置</h2>
+
+<h1 id="git">git</h1>
+
+<h1 id="jekyll">jekyll</h1>
+
+<h2 id="vscode配置免密登录">vscode配置免密登录</h2>]]></content><author><name>Song Pengxiao</name></author><summary type="html"><![CDATA[WSL2 / 从零开始配置 网络配置 zsh Shell 配置 typora 配置 git jekyll vscode配置免密登录]]></summary></entry><entry><title type="html">我是中文</title><link href="http://localhost:4000/blogging/demo/2019/08/08/text-and-Chinese.html" rel="alternate" type="text/html" title="我是中文" /><published>2019-08-08T11:33:00+08:00</published><updated>2019-08-08T11:33:00+08:00</updated><id>http://localhost:4000/blogging/demo/2019/08/08/text-and-Chinese</id><content type="html" xml:base="http://localhost:4000/blogging/demo/2019/08/08/text-and-Chinese.html"><![CDATA[<h1 id="标题1">标题1</h1>
 
 <h2 id="课程主页">课程主页</h2>
 <ul>
