@@ -130,13 +130,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .footer-col-wrapper { font-size: 15.75px; color: #828282; margin-left: -15px; }
 
-.footer-col { float: left; margin-bottom: 15px; padding-left: 15px; }
-
-.footer-col-1 { width: -webkit-calc(35% - (30px / 2)); width: calc(35% - (30px / 2)); }
-
-.footer-col-2 { width: -webkit-calc(20% - (30px / 2)); width: calc(20% - (30px / 2)); }
-
-.footer-col-3 { width: -webkit-calc(45% - (30px / 2)); width: calc(45% - (30px / 2)); }
+.footer-col { display: flex; justify-content: center; margin-bottom: 15px; }
 
 @media screen and (max-width: 960px) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); } .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
 
