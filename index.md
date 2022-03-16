@@ -12,6 +12,11 @@ layout: page
   - [JavaScript 教程 - 网道](https://wangdoc.com/javascript/)
   - [Bash 脚本教程 - 网道](https://wangdoc.com/bash/)
   - [SSH 教程 - 网道](https://wangdoc.com/ssh/)
+- [开发者武器库 · 属于程序员的工具箱 (devtool.tech)](https://devtool.tech/)
+  - 各种各样的 cheetsheet：[Devhints — TL;DR for developer documentation](https://devhints.io/)
+  - 命令行解释：[explainshell.com - match command-line arguments to their help text](https://explainshell.com/)
+  - 正则表达式学习
+
 
 Web开发：
 
@@ -20,6 +25,8 @@ Web开发：
   - 当前进度：多媒体与嵌入
 - [Learn CSS! (web.dev)](https://web.dev/learn/css/)
 - [Learn Responsive Design! (web.dev)](https://web.dev/learn/design/)
+- 练习 CSS 选择器：[CSS Diner - Where we feast on CSS Selectors! (flukeout.github.io)](https://flukeout.github.io/)
+- 调色板：[ColorSpace - Color Palettes Generator and Color Gradient Tool (mycolor.space)](https://mycolor.space/)
 
 Git使用：
 
@@ -30,6 +37,7 @@ Git使用：
 - [计算机教育中缺失的一课 · the missing semester of your cs education (missing-semester-cn.github.io)](https://missing-semester-cn.github.io/)
 - 版本控制 !important
   - [Git教程 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/896043488029600)
+- 复杂系统设计：[donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards. (github.com)](https://github.com/donnemartin/system-design-primer)
 
 ## Learn to be
 
