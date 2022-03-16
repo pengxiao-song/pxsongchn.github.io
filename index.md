@@ -25,7 +25,7 @@ Web开发：
   - 当前进度：多媒体与嵌入
 - [Learn CSS! (web.dev)](https://web.dev/learn/css/)
 - [Learn Responsive Design! (web.dev)](https://web.dev/learn/design/)
-- 练习 CSS 选择器：[CSS Diner - Where we feast on CSS Selectors! (flukeout.github.io)](https://flukeout.github.io/)
+- 练习 CSS 选择器（已完成）：[CSS Diner - Where we feast on CSS Selectors! (flukeout.github.io)](https://flukeout.github.io/)
 - 调色板：[ColorSpace - Color Palettes Generator and Color Gradient Tool (mycolor.space)](https://mycolor.space/)
 
 Git使用：
@@ -73,3 +73,5 @@ Git使用：
 ## Webset
 
 [阮一峰的网络日志 (ruanyifeng.com)](https://www.ruanyifeng.com/blog/)
+
+[GitHubDaily](https://github.com/GitHubDaily/GitHubDaily)
