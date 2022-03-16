@@ -4,6 +4,14 @@ layout: page
 
 ## :fire: News
 
+2022/3/17：
+
+- 论文选读
+  - LAMDA12 群里
+  - Awesome paper (Active Learning / Transfer Learning)
+- RNN code
+- Web development
+
 ## 学习进度
 
 类别归类：
@@ -25,8 +33,8 @@ Web开发：
   - 当前进度：多媒体与嵌入
 - [Learn CSS! (web.dev)](https://web.dev/learn/css/)
 - [Learn Responsive Design! (web.dev)](https://web.dev/learn/design/)
-- 练习 CSS 选择器（已完成）：[CSS Diner - Where we feast on CSS Selectors! (flukeout.github.io)](https://flukeout.github.io/)
 - 调色板：[ColorSpace - Color Palettes Generator and Color Gradient Tool (mycolor.space)](https://mycolor.space/)
+- 练习 CSS 选择器（已完成）：[CSS Diner - Where we feast on CSS Selectors! (flukeout.github.io)](https://flukeout.github.io/)
 
 Git使用：
 
