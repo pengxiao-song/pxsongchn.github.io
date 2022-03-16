@@ -9,8 +9,14 @@ layout: page
 - 论文选读
   - LAMDA12 群里
   - Awesome paper (Active Learning / Transfer Learning)
-- RNN code
+- RNN 
+  - DEEP LEARNING theory
+  - code
+
 - Web development
+  - 待完成1：多媒体与嵌入作业
+  - 待完成2：HMTL表格
+
 
 ## 学习进度
 
@@ -30,7 +36,7 @@ Web开发：
 
 - [MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web)
   - 按步骤来
-  - 当前进度：多媒体与嵌入
+  - 当前进度：HTML finished
 - [Learn CSS! (web.dev)](https://web.dev/learn/css/)
 - [Learn Responsive Design! (web.dev)](https://web.dev/learn/design/)
 - 调色板：[ColorSpace - Color Palettes Generator and Color Gradient Tool (mycolor.space)](https://mycolor.space/)
