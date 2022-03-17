@@ -13,9 +13,9 @@ layout: page
   - DEEP LEARNING theory
   - code
 
-- Web development
-  - 待完成1：多媒体与嵌入作业
-  - 待完成2：HMTL表格
+- ~~Web development~~
+  - ~~待完成1：多媒体与嵌入作业~~
+  - ~~待完成2：HMTL表格~~
 
 
 ## 学习进度
