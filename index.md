@@ -4,19 +4,6 @@ layout: page
 
 ## :fire: News
 
-2022/3/17：
-
-- 论文选读
-  - LAMDA12 群里
-  - Awesome paper (Active Learning / Transfer Learning)
-- RNN 
-  - DEEP LEARNING theory
-  - code
-
-- ~~Web development~~
-  - ~~待完成1：多媒体与嵌入作业~~
-  - ~~待完成2：HMTL表格~~
-
 
 ## 学习进度
 
@@ -89,3 +76,5 @@ Git使用：
 [阮一峰的网络日志 (ruanyifeng.com)](https://www.ruanyifeng.com/blog/)
 
 [GitHubDaily](https://github.com/GitHubDaily/GitHubDaily)
+
+[少数派 - Matrix 社区](https://sspai.com/matrix)
